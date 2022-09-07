@@ -7,12 +7,14 @@
   font-family: "Open Sans' ";
 }
 
+/* #background of whole page */
 body {
   background: #f5f6fa;
 }
 
+/* #side bar background */
 .wrapper .sidebar {
-  background: rgb(248, 229, 229);
+  /* background: rgb(248, 229, 229); */
   position: fixed;
   top: 0;
   left: 0;
@@ -22,25 +24,67 @@ body {
   transition: all 0.5s ease;
 }
 
-.wrapper .sidebar .profile {
+/* #the alignment of the logo */
+.wrapper .sidebar .logo {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.wrapper .sidebar .profile img {
+/* #how the logo image looks */
+.wrapper .sidebar .logo img {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 500%;
   margin: 0 auto;
 }
 
-.wrapper .sidebar .profile h3 {
+/* #the color/size of my h3 word (my name) */
+.wrapper .sidebar .logo h3 {
   color: #000000;
-  margin: 10px 0 5px;
+  margin: 17px 0 5px;
 }
 
-.wrapper .sidebar .profile p {
+/* #the color/size of my body words in my sidebar (software developer) */
+.wrapper .sidebar .logo p {
   color: #000000;
-  font-size: 14px;
+  font-size: 16px;
+  margin: 2px 0 20px;
+}
+
+/* #the color/size of the words in my sidebar */
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  /* border-bottom: 1px solid rgb(195, 158, 160); */
+  font-size: 16px;
+  position: relative;
+}
+
+/* #DOES NOT WORK */
+/* #the icons for my menu bar */
+.wrapper .sidebar ul li a .icon {
+  background-color: black;
+  width: 30px display inline-block;
+  height: 100em;
+}
+
+/* # my menu bar link hover */
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  color: black;
+  background: #fa255e;
+  border-right: 2px solid rgb(5, 68, 104);
+}
+
+/* #DOES NOT WORK */
+/* #the icon hover */
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+  color: black;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a:active::before {
+  display: block;
 }
