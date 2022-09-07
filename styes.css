@@ -12,9 +12,36 @@ body {
   background: #f5f6fa;
 }
 
+/* #TOP BAR CSS CODE (home) */
+/* #nav bar background */
+.nav-bar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+/* #moving my nav bar over */
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* #nav list format (spacing my words) */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/* #SIDE BAR CSS CODE (about me, skills, projects) */
 /* #side bar background */
 .wrapper .sidebar {
-  /* background: rgb(248, 229, 229); */
+  background: rgb(248, 229, 229);
   position: fixed;
   top: 0;
   left: 0;
@@ -48,7 +75,7 @@ body {
 /* #the color/size of my body words in my sidebar (software developer) */
 .wrapper .sidebar .logo p {
   color: #000000;
-  font-size: 16px;
+  font-size: 20px;
   margin: 2px 0 20px;
 }
 
@@ -61,7 +88,6 @@ body {
   position: relative;
 }
 
-/* #DOES NOT WORK */
 /* #the icons for my menu bar */
 .wrapper .sidebar ul li a .icon {
   background-color: black;
@@ -74,10 +100,9 @@ body {
 .wrapper .sidebar ul li a.active {
   color: black;
   background: #fa255e;
-  border-right: 2px solid rgb(5, 68, 104);
+  /* border-right: 2px solid rgb(5, 68, 104); */
 }
 
-/* #DOES NOT WORK */
 /* #the icon hover */
 .wrapper .sidebar ul li a:hover .icon,
 .wrapper .sidebar ul li a.active .icon {
@@ -87,4 +112,35 @@ body {
 .wrapper .sidebar ul li a:hover::before,
 .wrapper .sidebar ul li a:active::before {
   display: block;
+}
+
+/* #the movement/alighment of the icon */
+.wrapper .section {
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+}
+
+/* #nav bar (i didn't use it) */
+.wrapper .section .top_navbar {
+  /* background: rgb(7, 105, 185); */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+/* #the color of the icon */
+.wrapper .section .top_navbar .hamburger a {
+  font-size: 28px;
+  color: black;
+}
+
+/* #color changes when you hover over the icon */
+.wrapper .section .top_navbar .hamburger a:hover {
+  color: #fa255e;
+}
+
+body.active .wrapper .sidebar {
+  left: -225px;
 }
