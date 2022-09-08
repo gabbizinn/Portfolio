@@ -9,10 +9,14 @@
 
 /* #background of whole page */
 body {
-  background: #f5f6fa;
+  background: white;
 }
 
 /* #TOP BAR CSS CODE (home) */
+/* # how big my top logo design is */
+.logo {
+  width: 20%;
+}
 /* #nav bar background */
 .nav-bar {
   position: relative;
@@ -38,6 +42,80 @@ nav ul li {
   margin: 10px 20px;
 }
 
+/* #the color and boldness of my nav bar words */
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* #the color of the line that pops up when I hover over a word */
+nav ul li a:hover {
+  text-decoration: underline;
+  border-bottom: solid 5px #fa255e;
+}
+
+/* #where my home page intro words are */
+.intro {
+  margin-left: 8%;
+  margin-top: 13%;
+}
+
+/* #the color and size of my intro words */
+.intro h1 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+}
+/* 
+#the color of my last name */
+span {
+  color: #fa255e;
+}
+
+/* #the color of my body words in my intro */
+.intro p {
+  color: black;
+  line-height: 22px;
+}
+
+/* #the styling of a button for my resume */
+.intro a {
+  background: #fa255e;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin: 30px 00px;
+  border-radius: 90px;
+}
+
+/* #the size of my images and how they look */
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  transition: bottom 4s left 4s;
+}
+
+.images:hover .shape {
+  top: 40px;
+}
+.images:hover .me {
+  left: 55%;
+}
+
 /* #SIDE BAR CSS CODE (about me, skills, projects) */
 /* #side bar background */
 .wrapper .sidebar {
@@ -52,31 +130,33 @@ nav ul li {
 }
 
 /* #the alignment of the logo */
-.wrapper .sidebar .logo {
+.wrapper .sidebar .profile {
   margin-bottom: 30px;
   text-align: center;
 }
 
 /* #how the logo image looks */
-.wrapper .sidebar .logo img {
+.wrapper .sidebar .profile img {
   display: block;
-  width: 200px;
+  width: 100px;
   height: 200px;
   border-radius: 500%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* #the color/size of my h3 word (my name) */
-.wrapper .sidebar .logo h3 {
+.wrapper .sidebar .profile h3 {
   color: #000000;
-  margin: 17px 0 5px;
+  margin: 10px 0 5px;
+  margin-left: 50px;
 }
 
 /* #the color/size of my body words in my sidebar (software developer) */
-.wrapper .sidebar .logo p {
-  color: #000000;
+.wrapper .sidebar .profile p {
+  color: black;
   font-size: 20px;
   margin: 2px 0 20px;
+  margin-left: 50px;
 }
 
 /* #the color/size of the words in my sidebar */
@@ -84,8 +164,9 @@ nav ul li {
   display: block;
   padding: 13px 30px;
   /* border-bottom: 1px solid rgb(195, 158, 160); */
-  font-size: 16px;
+  font-size: 25px;
   position: relative;
+  color: black;
 }
 
 /* #the icons for my menu bar */
@@ -114,10 +195,10 @@ nav ul li {
   display: block;
 }
 
-/* #the movement/alighment of the icon */
+/* #the movement/alignment of the icon */
 .wrapper .section {
   width: calc(100% - 225px);
-  margin-left: 225px;
+  margin-left: 220px;
   transition: all 0.5s ease;
 }
 
