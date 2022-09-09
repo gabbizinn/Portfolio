@@ -7,7 +7,7 @@
   font-family: "Open Sans' ";
 }
 
-/* #background of whole page */
+/* #background of side nav bar pages */
 body {
   background: white;
 }
@@ -22,7 +22,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: white;
+  background: rgb(248, 229, 229);
 }
 
 /* #moving my nav bar over */
@@ -58,7 +58,7 @@ nav ul li a:hover {
 /* #where my home page intro words are */
 .intro {
   margin-left: 8%;
-  margin-top: 13%;
+  margin-top: 10%;
 }
 
 /* #the color and size of my intro words */
@@ -66,6 +66,8 @@ nav ul li a:hover {
   font-size: 50px;
   color: black;
   margin-bottom: 20px;
+  font-size: 5rem;
+  font-weight: 700;
 }
 /* 
 #the color of my last name */
@@ -79,6 +81,21 @@ span {
   line-height: 22px;
 }
 
+.about-img {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* #the para in the intro */
+.aboutme-para p {
+  width: 50%;
+  line-height: 1.1;
+}
+
 /* #the styling of a button for my resume */
 .intro a {
   background: #fa255e;
@@ -87,14 +104,15 @@ span {
   font-weight: bold;
   color: white;
   display: inline-block;
-  margin: 30px 00px;
+  margin: 30px 0px;
   border-radius: 90px;
 }
 
 /* #the size of my images and how they look */
 .images {
-  width: 45%;
-  height: 80%;
+  /* max-width: 45%; */
+  width: 40%;
+  height: 70%;
   position: absolute;
   bottom: 0;
   right: 100px;
@@ -138,7 +156,7 @@ span {
 /* #how the logo image looks */
 .wrapper .sidebar .profile img {
   display: block;
-  width: 100px;
+  width: 200px;
   height: 200px;
   border-radius: 500%;
   margin: auto;
@@ -148,7 +166,7 @@ span {
 .wrapper .sidebar .profile h3 {
   color: #000000;
   margin: 10px 0 5px;
-  margin-left: 50px;
+  margin-left: 5px;
 }
 
 /* #the color/size of my body words in my sidebar (software developer) */
@@ -156,7 +174,7 @@ span {
   color: black;
   font-size: 20px;
   margin: 2px 0 20px;
-  margin-left: 50px;
+  margin-left: 5px;
 }
 
 /* #the color/size of the words in my sidebar */
@@ -224,5 +242,3 @@ span {
 body.active .wrapper .sidebar {
   left: -225px;
 }
-
-/* #about me page code */

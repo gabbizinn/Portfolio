@@ -7,40 +7,27 @@
     <!-- #Responsive Design Code -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gabriel Zinn</title>
+    <title>About Page</title>
 
-    <!-- #google stylesheet -->
+    <!-- #google stylesheet for side nav bar icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
+    <!-- #google icon link for contact icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!-- #CSS LINK -->
     <link rel="stylesheet" href="styes.css" type="text/css" />
     <link rel="icon" type="images/png" href="images/f.png" />
-
-    <!-- #java link -->
-    <script type="text/javascript">
-      function displayNextImage() {
-        x = x === images.length - 1 ? 0 : x + 1;
-        document.getElementById("img").src = images[x];
-      }
-      function displayPreviousImage() {
-        x = x <= 0 ? images.length - 1 : x - 1;
-        document.getElementById("img").src = images[x];
-      }
-      function startTimer() {
-        setInterval(displayNextImage, 1750);
-      }
-      var images = [],
-        x = -1;
-      images[0] = "images/HTML_logo.jpg";
-      images[1] = "images/css_logo.png";
-      images[2] = "images/Python_logo_icon.png";
-    </script>
   </head>
 
-  <body onload="startTimer()">
+  <!-- #START OF CODE -->
+  <body>
     <!-- #Menu Bar code -->
     <div class="wrapper">
       <div class="sidebar">
@@ -77,7 +64,7 @@
 
             <!-- #about me -->
             <li>
-              <a href="contact.html">
+              <a href="about.html">
                 <i class="material-icons">person</i>
                 <span class="menu-items"> Contact</span>
               </a>
@@ -110,5 +97,12 @@
         document.querySelector("body").classList.toggle("active");
       });
     </script>
+
+    <!-- #contact box -->
+    <section class="contact">
+      <div class="content"></div>
+      <h2>Contact Me</h2>
+      <p>contact info</p>
+    </section>
   </body>
 </html>
