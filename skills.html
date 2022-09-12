@@ -7,7 +7,7 @@
     <!-- #Responsive Design Code -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gabriel Zinn</title>
+    <title>Skills Page</title>
 
     <!-- #google stylesheet -->
     <link
@@ -18,29 +18,8 @@
     <!-- #CSS LINK -->
     <link rel="stylesheet" href="styes.css" type="text/css" />
     <link rel="icon" type="images/png" href="images/f.png" />
-
-    <!-- #java link -->
-    <script type="text/javascript">
-      function displayNextImage() {
-        x = x === images.length - 1 ? 0 : x + 1;
-        document.getElementById("img").src = images[x];
-      }
-      function displayPreviousImage() {
-        x = x <= 0 ? images.length - 1 : x - 1;
-        document.getElementById("img").src = images[x];
-      }
-      function startTimer() {
-        setInterval(displayNextImage, 1750);
-      }
-      var images = [],
-        x = -1;
-      images[0] = "images/HTML_logo.jpg";
-      images[1] = "images/css_logo.png";
-      images[2] = "images/Python_logo_icon.png";
-    </script>
   </head>
 
-  <body onload="startTimer()">
     <!-- #Menu Bar code -->
     <div class="wrapper">
       <div class="sidebar">
@@ -76,16 +55,18 @@
             </li>
 
             <!-- #about me -->
-            <li>
-              <a href="contact.html">
-                <i class="material-icons">person</i>
-                <span class="menu-items"> Contact</span>
-              </a>
-            </li>
+            <!-- <li> -->
+            <!-- <a href="contact.html"> -->
+            <!-- <i class="material-icons">person</i> -->
+            <!-- <span class="menu-items"> Contact</span> -->
+            <!-- </a> -->
+            <!-- </li> -->
 
             <!-- #resume -->
             <li>
-              <a href="#">
+              <a
+                href="https://docs.google.com/document/d/1wRECcFnD785uNmiXvE4Rx3wfEQnI9pXPupXA4uDIWUQ/edit?usp=sharing"
+              >
                 <span class="menu-items"> Resume </span>
               </a>
             </li>
@@ -110,5 +91,104 @@
         document.querySelector("body").classList.toggle("active");
       });
     </script>
+
+    <!-- #start of skills list -->
+    <div class="other-heading">
+      <h1>My Skills</h1>
+    </div>
+    <div class="container">
+      <!-- <h1>My Skills</h1> -->
+      <p class="subheading">Below are all the skills I've mastered.</p>
+      <section>
+        <!-- #JAVA -->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/java.png" class="logo" alt="java logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>Java</p>
+            <cite>Mastered: -</cite>
+          </blockquote>
+        </div>
+        <!-- #HTML -->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/html.png" class="logo" alt="html logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>HTML</p>
+            <cite>Mastered: 2022</cite>
+          </blockquote>
+        </div>
+        <!-- #DJANGO -->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/dj.png" class="logo" alt="dj logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>Django</p>
+            <cite>Mastered: -</cite>
+          </blockquote>
+        </div>
+        <!-- #SQL-->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/sql.png" class="logo" alt="sql logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>SQL</p>
+            <cite>Mastered: -</cite>
+          </blockquote>
+        </div>
+        <!-- #PYTHON -->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/python.png" class="logo" alt="python logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>Python</p>
+            <cite>Mastered: 2022</cite>
+          </blockquote>
+        </div>
+        <!-- #JAVA SCRIPT -->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/javas.png" class="logo" alt="javas logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>Java Script</p>
+            <cite>Mastered: -</cite>
+          </blockquote>
+        </div>
+        <!-- #GIT-->
+        <div class="card">
+          <span>
+            <img src="images/git.png" class="logo" alt="git logo" />
+            <div class="skills"></div>
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>Git</p>
+            <cite>Mastered: 2022</cite>
+          </blockquote>
+        </div>
+        <!-- #CSS-->
+        <div class="card">
+          <span>
+            <div class="skills"></div>
+            <img src="images/css.png" class="logo" alt="css logo" />
+          </span>
+          <blockquote cite="http://someurlx0x.com">
+            <p>CSS</p>
+            <cite>Mastered: 2022</cite>
+          </blockquote>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
