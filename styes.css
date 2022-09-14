@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans' ";
+  scroll-behavior: smooth;
 }
 
 /* #background of side nav bar pages */
@@ -18,6 +19,7 @@ body {
 .logo {
   width: 20%;
 }
+
 /* #nav bar background */
 .nav-bar {
   position: relative;
@@ -70,6 +72,7 @@ nav ul li a:hover {
   font-size: 5rem;
   font-weight: 700;
 }
+
 /* 
 #the color of my last name */
 span {
@@ -80,6 +83,7 @@ span {
 .intro p {
   color: black;
   line-height: 22px;
+  font-size: 2rem;
 }
 
 .about-img {
@@ -87,6 +91,7 @@ span {
   margin-bottom: 10rem;
 }
 
+/* #the size of the body words on skills and projects page */
 p {
   font-size: 2rem;
 }
@@ -107,17 +112,17 @@ p {
   display: inline-block;
   margin: 30px 0px;
   border-radius: 30px;
-  border: 2px solid ;
+  border: 2px solid;
   padding: 9px 22px;
 }
 
-.intro a:hover{
+.intro a:hover {
   background-color: transparent;
   cursor: pointer;
 }
 
 /* #home page contact button */
-.contact-me .button-two{
+.contact-me .button-two {
   background-color: #fa255e;
   color: white;
   text-decoration: none;
@@ -128,18 +133,60 @@ p {
   margin: 60px 0px;
 }
 
-.contact-me .button-two:hover{
+/* #the kind of cursor what color the resume button changes when it's hovered */
+.contact-me .button-two:hover {
   background-color: transparent;
   cursor: pointer;
 }
 
-#home page contact links
-.home-container{
+/* #START OF CONTACT PAGE CODE */
+/* #home page contact links */
+.home-container {
   width: 45%;
-margin: 0 auto;
-float: center;
+  margin: 0 auto;
+  float: center;
 }
 
+.contact-card {
+  background-color: rgb(248, 229, 229) padding 1.3em;
+  margin-left: 20px;
+}
+
+.contacth {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* #contact bar container */
+.home-container {
+  width: 65%;
+  margin: 0 auto;
+  margin-left: 150px;
+}
+/* #CONTACT LINKS */
+.linkin-pic {
+  /* margin-left: 200px; */
+  /* margin-top: -50%; */
+  height: 10em;
+  float: right;
+  margin-top: 210px;
+}
+
+.github-pic {
+  /* margin-left: 200px; */
+  /* margin-bottom: -40px; */
+  height: 10em;
+  float: right;
+  margin-top: 110px;
+}
+
+.email-pic {
+  height: 10em;
+  float: right;
+  margin-top: 100px;
+}
+
+/* #The images on my home page */
 /* #the size of my images and how they look */
 .images {
   /* max-width: 45%; */
@@ -166,8 +213,7 @@ float: center;
   left: 55%;
 }
 
-
-/* #SIDE BAR CSS CODE (about me, skills, projects) */
+/* #START OF SIDE BAR CSS CODE (about me, skills, projects) */
 /* #side bar background */
 .wrapper .sidebar {
   background: rgb(248, 229, 229);
@@ -295,7 +341,7 @@ body {
   margin-top: 2em;
 }
 
-/* #color of cards */
+/* #how my cards are sectioned off */
 section {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -303,382 +349,15 @@ section {
   margin-top: 2em;
 }
 
+/* #how my cards look on my skills page */
 .card {
-  background-color: rgb(248, 229, 229)
-  padding 1.7em;
-}
-
-.blockquote {
-  margin: 0;
-}
-
-.skills {
-  width: 70px;
-  height: 70px;
-  display: block;
-  /* background: gray; */
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.cite {
-  font-style: normal;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.4em;
-}
-
-.container {
-  text-align: center;
-}
-
-
-/* #START OF CONTACT PAGE CODE */
-.contacth {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* #CONTACT LINKS */
-.linkin-pic {
-  /* margin-left: 200px; */
-  /* margin-top: -50%; */
-  height: 10em;
-  float: right;
-  margin-top: 210px;
-}
-
-.github-pic {
-  /* margin-left: 200px; */
-  /* margin-bottom: -40px; */
-  height: 10em;
-  float: right;
-  margin-top: 110px;
-}
-
-.email-pic {
-  height: 10em;
-  float: right;
-  margin-top: 100px;
-}
-
-.contact-card {
-  background-color:rgb(248, 229, 229)
-  padding 1.3em;
-  margin-left: 20px;
-}
-
-/* #Heading to Other pages */
-.other-heading {
-  font-size: 50px;
-  color: black;
-  margin-bottom: 20px;
-  font-size: 5rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.home-container{
-    width: 45%;
-    margin: 0 auto;
-    margin-left: 50px;
-}
-
-/* #Iphone */
-@media screen and (min-width:375px) and (max-width:667px){
-
-/* #START OF HOME PAGE CODE */
-* {
-  list-style: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans' ";
-}
-
-/* #background of side nav bar pages */
-body {
-  background: rgb(248, 229, 229);
-}
-
-/* #TOP BAR CSS CODE (home) */
-/* # how big my top logo design is */
-.logo {
-  width: 20%;
-}
-/* #nav bar background */
-.nav-bar {
-  position: relative;
+  /* background-color:  #c39ea0; */
+  /* border: 6px solid #c39ea0; */
+  height: -100%;
   width: 100%;
-  height: 100vh;
-  background: rgb(248, 229, 229);
-}
-
-/* #moving my nav bar over */
-nav {
-  display: flex;
-  width: 84%;
-  margin: auto;
-  padding: 20px 0;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* #nav list format (spacing my words) */
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-
-/* #the color and boldness of my nav bar words */
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* #the color of the line that pops up when I hover over a word */
-nav ul li a:hover {
-  text-decoration: underline;
-  border-bottom: solid 5px #fa255e;
-}
-
-/* #where my home page intro words are */
-.intro {
-  margin-left: 8%;
-  margin-top: 10%;
-}
-
-/* #the color and size of my intro words */
-.intro h1 {
-  font-size: 25px;
-  color: black;
-  margin-bottom: 20px;
-  font-size: 5rem;
-  font-weight: 700;
-  text-align: center;
-}
-/* 
-#the color of my last name */
-span {
-  color: #fa255e;
-  text-align: center;
-}
-
-/* #the color of my paragraph words in my intro */
-.intro p {
-  color: black;
-  line-height: 22px;
-}
-
-p {
-  font-size: 2rem;
-}
-
-/* #MY INTRO PARAGRAPH */
-.aboutme-para p {
-  width: 100%;
-  height: 5%;
-  line-height: 1.1;
-  text-align: center;
-}
-
-
-/* #the styling of a button for my resume */
-.intro a {
-  background: #fa255e;
-  padding: 10px 18px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  display: inline-block;
-  margin: 30px 0px;
-  border-radius: 90px;
-  align-items: center;
-}
-
-/* #home page contact links */
-.home-container{
-  width: 45%;
-margin: 0 auto;
-float: center;
-}
-
-/* #TOOK OUT WITH PHONE */
-/* #the size of my images and how they look */
-.images {
-  max-width: 0%;
-  width: 0%;
-  height: 7%;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-}
-
-.images img {
-  height: 150%;
-  position: absolute;
-  left: 90%;
-  bottom: 400%;
-  transform: translateX(-50%);
-  transition: bottom 4s left 4s;
-  display: none;
-}
-
-.images:hover .shape {
-  top: 40px;
-}
-.images:hover .me {
-  left: 55%;
-}
-
-
-/* #SIDE BAR CSS CODE (about me, skills, projects) */
-/* #side bar background */
-.wrapper .sidebar {
-  background: rgb(248, 229, 229);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 225px;
-  height: 100%;
-  padding: 20px 0;
-  transition: all 0.5s ease;
-}
-
-/* #the alignment of the logo */
-.wrapper .sidebar .profile {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* #how the logo image looks */
-.wrapper .sidebar .profile img {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 500%;
-  margin: auto;
-}
-
-/* #the color/size of my h3 word (my name) */
-.wrapper .sidebar .profile h3 {
-  color: #000000;
-  margin: 10px 0 5px;
-  margin-left: 5px;
-}
-
-/* #the color/size of my body words in my sidebar (software developer) */
-.wrapper .sidebar .profile p {
-  color: black;
-  font-size: 20px;
-  margin: 2px 0 20px;
-  margin-left: 5px;
-}
-
-/* #the color/size of the words in my sidebar */
-.wrapper .sidebar ul li a {
-  display: block;
-  padding: 13px 30px;
-  /* border-bottom: 1px solid rgb(195, 158, 160); */
-  font-size: 25px;
-  position: relative;
-  color: black;
-}
-
-/* #the icons for my menu bar */
-.wrapper .sidebar ul li a .icon {
-  background-color: black;
-  width: 30px display inline-block;
-  height: 100em;
-}
-
-/* # my menu bar link hover */
-.wrapper .sidebar ul li a:hover {
-  color: black;
-  background: #c39ea0;
-  /* border-right: 2px solid rgb(5, 68, 104); */
-}
-
-/* #the icon hover */
-.wrapper .sidebar ul li a:hover .icon,
-.wrapper .sidebar ul li a.active .icon {
-  color: black;
-}
-
-.wrapper .sidebar ul li a:hover::before,
-.wrapper .sidebar ul li a:active::before {
-  display: block;
-}
-
-/* #the movement/alignment of the icon */
-.wrapper .section {
-  width: calc(100% - 225px);
-  margin-left: 220px;
-  transition: all 0.5s ease;
-}
-
-/* #nav bar (i didn't use it) */
-.wrapper .section .top_navbar {
-  /* background: rgb(7, 105, 185); */
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-}
-
-/* #the color of the icon */
-.wrapper .section .top_navbar .hamburger a {
-  font-size: 28px;
-  color: black;
-}
-
-/* #color changes when you hover over the icon */
-.wrapper .section .top_navbar .hamburger a:hover {
-  color: #fa255e;
-}
-
-body.active .wrapper .sidebar {
-  left: -225px;
-}
-
-/* #START OF SKILLS PAGE CODE */
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 95%;
-  margin: 0 auto;
-}
-
-.section {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 1em;
-  margin-top: 2em;
-}
-
-/* #color of cards */
-section {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 1em;
-  margin-top: 2em;
-}
-
-.card {
-  background-color: rgb(248, 229, 229)
   padding: 1.7em;
 }
 
-.blockquote {
-  margin: 0;
-}
-
 .skills {
   width: 70px;
   height: 70px;
@@ -698,58 +377,429 @@ section {
   text-align: center;
 }
 
+/* #START OF PROJECTS PAGE CODE */
+/* #need to add boxes */
+.projects-card {
+  background-color: blue;
+  border: 1px solid blue;
+  height: -100%;
+  width: 100%;
+  padding: 1.7em;
+}
 
-/* #START OF CONTACT PAGE CODE */
-.contacth {
+/* #Skills page header */
+.sintro {
   text-align: center;
-  margin-bottom: 2rem;
+  font-size: 55px;
+  margin-top: 15%;
+  color: green;
 }
 
-/* #CONTACT LINKS */
-.linkin-pic {
-  /* margin-left: 200px; */
-  /* margin-top: -50%; */
-  height: 10em;
-  float: right;
-  margin-top: 210px;
-}
-
-.github-pic {
-  /* margin-left: 200px; */
-  /* margin-bottom: -40px; */
-  height: 10em;
-  float: right;
-  margin-top: 110px;
-}
-
-.email-pic {
-  height: 10em;
-  float: right;
-  margin-top: 100px;
-}
-
-.contact-card {
-  background-color:rgb(248, 229, 229)
-  padding: 1.3em;
-  margin-left: 20px;
-}
-
-/* #Heading to Other pages */
-.other-heading {
-  font-size: 50px;
-  color: black;
-  margin-bottom: 20px;
-  font-size: 5rem;
-  font-weight: 700;
+/* #PROJECTS PAGE HEADER */
+.pintro {
   text-align: center;
+  font-size: 55px;
+  margin-top: 65%;
+  margin-right: 288%;
+  float: right;
+  text-align: center;
+  color: green;
 }
 
-.home-container{
-    width: 45%;
-    margin: 0 auto;
+/* #------ */
+/* #START OF RESPONSIVE CODE FOR PHONES(listed below) */
+/* #works for 1)Home page 2)
+1)iPhone
+2)PIXEL 5
+3)Samsung S20 ULTRA
+*/
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  /* #START OF HOME PAGE CODE */
+  * {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans' ";
+    scroll-behavior: smooth;
+  }
+
+  /* #background of side nav bar pages */
+  body {
+    background: rgb(248, 229, 229);
+  }
+
+  /* #TOP BAR CSS CODE (home) */
+  /* # how big my top logo design is */
+  .logo {
+    width: 40%;
+  }
+
+  /* #nav bar background */
+  .nav-bar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(248, 229, 229);
+  }
+
+  /* #moving my nav bar over */
+  nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* #nav list format (spacing my words) */
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+
+  /* #the color and boldness of my nav bar words */
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  /* #the color of the line that pops up when I hover over a word */
+  nav ul li a:hover {
+    text-decoration: underline;
+    border-bottom: solid 5px #fa255e;
+  }
+
+  /* #the color and size of my intro words */
+  .intro h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-left: 60px;
+  }
+
+  /* 
+#the color of my last name */
+  span {
+    color: #fa255e;
+    margin-left: 40px;
+  }
+
+  /* #the color of my body words in my intro */
+  .intro p {
+    color: black;
+    line-height: 22px;
+    font-size: 2rem;
     margin-left: 50px;
-}
+  }
 
+  .about-img {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: none;
+  }
+
+  /* #the size of the body words on skills and projects page */
+  p {
+    font-size: 2rem;
+    display: 100px;
+  }
+
+  /* #MY INTRO PARAGRAPH */
+  .aboutme-para p {
+    width: 100%;
+    line-height: 1.1;
+    display: 90%;
+  }
+
+  /* #the styling of a button for my resume */
+  .intro a {
+    background: #fa255e;
+    padding: 9px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 30px;
+    border: 2px solid;
+    padding: 9px 22px;
+  }
+
+  .intro a:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  /* #home page contact button */
+  .contact-me .button-two {
+    background-color: #fa255e;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    margin: 60px 0px;
+    margin-left: -1000px;
+  }
+
+  /* #the kind of cursor what color the resume button changes when it's hovered */
+  .contact-me .button-two:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  /* #START OF CONTACT PAGE CODE */
+  /* #home page contact links */
+  .contact-card {
+    background-color: rgb(248, 229, 229) padding 1.3em;
+    margin-left: 20px;
+    margin-bottom: -900px;
+  }
+
+  .contacth {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* #contact bar container */
+  .home-container {
+    width: 65%;
+    margin: 0 auto;
+    margin-left: 105px;
+    margin-top: 500px;
+  }
+  /* #CONTACT LINKS */
+  .linkin-pic {
+    /* margin-left: 200px; */
+    /* margin-top: -50%; */
+    height: 10em;
+    float: right;
+    margin-top: 210px;
+  }
+
+  .github-pic {
+    /* margin-left: 200px; */
+    /* margin-bottom: -40px; */
+    height: 10em;
+    float: right;
+    margin-top: 110px;
+  }
+
+  .email-pic {
+    height: 10em;
+    float: right;
+    margin-top: 100px;
+  }
+
+  /* #The images on my home page */
+  /* #the size of my images and how they look */
+  .images {
+    /* max-width: 45%; */
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    display: none;
+  }
+
+  /* #START OF SIDE BAR CSS CODE (about me, skills, projects) */
+  /* #side bar background (took out)*/
+  .wrapper .sidebar {
+    background: rgb(248, 229, 229);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+
+  /* #the alignment of the logo */
+  .wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* #how the logo image looks */
+  .wrapper .sidebar .profile img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 500%;
+    margin: auto;
+  }
+
+  /* #the color/size of my h3 word (my name) */
+  .wrapper .sidebar .profile h3 {
+    color: #000000;
+    margin: 10px 0 5px;
+    margin-left: 5px;
+  }
+
+  /* #the color/size of my body words in my sidebar (software developer) */
+  .wrapper .sidebar .profile p {
+    color: black;
+    font-size: 20px;
+    margin: 2px 0 20px;
+    margin-left: 5px;
+  }
+
+  /* #the color/size of the words in my sidebar */
+  .wrapper .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    /* border-bottom: 1px solid rgb(195, 158, 160); */
+    font-size: 25px;
+    position: relative;
+    color: black;
+  }
+
+  /* #the icons for my menu bar */
+  .wrapper .sidebar ul li a .icon {
+    background-color: black;
+    width: 30px display inline-block;
+    height: 100em;
+  }
+
+  /* # my menu bar link hover */
+  .wrapper .sidebar ul li a:hover {
+    color: black;
+    background: #c39ea0;
+    /* border-right: 2px solid rgb(5, 68, 104); */
+  }
+
+  /* #the icon hover */
+  .wrapper .sidebar ul li a:hover .icon,
+  .wrapper .sidebar ul li a.active .icon {
+    color: black;
+  }
+
+  .wrapper .sidebar ul li a:hover::before,
+  .wrapper .sidebar ul li a:active::before {
+    display: block;
+  }
+
+  /* #the movement/alignment of the icon */
+  .wrapper .section {
+    width: calc(100% - 225px);
+    margin-left: 220px;
+    transition: all 0.5s ease;
+  }
+
+  /* #nav bar (i didn't use it) */
+  .wrapper .section .top_navbar {
+    /* background: rgb(7, 105, 185); */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  /* #the color of the icon */
+  .wrapper .section .top_navbar .hamburger a {
+    font-size: 28px;
+    color: black;
+  }
+
+  /* #color changes when you hover over the icon */
+  .wrapper .section .top_navbar .hamburger a:hover {
+    color: #fa255e;
+  }
+
+  body.active .wrapper .sidebar {
+    left: -225px;
+  }
+
+  /* #START OF SKILLS PAGE CODE */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 115%;
+    margin: 0 auto;
+    margin-top: 400%;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0em;
+    margin-top: 2em;
+  }
+
+  /* #how my cards are sectioned off */
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0em;
+    margin-top: 2em;
+  }
+
+  /* #how my cards look on my skills page */
+  .card {
+    /* background-color:  #c39ea0; */
+    /* border: 6px solid #c39ea0; */
+    height: -100%;
+    width: 100%;
+    padding: 1.7em;
+  }
+
+  .skills {
+    width: 70px;
+    height: 70px;
+    display: block;
+    /* background: gray; */
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .cite {
+    font-style: normal;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.4em;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  /* #START OF PROJECTS PAGE CODE */
+  /* #need to add boxes */
+  .projects-card {
+    background-color: blue;
+    border: 1px solid blue;
+    height: -100%;
+    width: 100%;
+    padding: 1.7em;
+  }
+
+  /* #SKILLS PAGE HEADER */
+  .sintro {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: -105%;
+    color: green;
+  }
+  .pintro {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: -105%;
+    color: green;
+  }
 }
 
 /* #contact form-didn't work */
