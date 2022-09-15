@@ -47,7 +47,7 @@ nav {
 nav ul {
   display: inline-block;
   list-style: none;
-  border: 5px solid green;
+  border: 5px solid #c39ea0;
 }
 
 /* #nav list format (spacing my words) */
@@ -291,10 +291,11 @@ section {
   margin-top: 2em;
 }
 .card {
-  background-color: #c39ea0;
+  background-color: white;
   padding: 1.7em;
   align-items: center;
   text-align: center;
+  border: 5px solid #c39ea0;
 }
 blockquote {
   margin: 0;
