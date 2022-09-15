@@ -477,7 +477,7 @@ cite {
 
   section {
     display: block;
-    width:100%
+    width: 100%;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
     margin-top: 2em;
@@ -488,22 +488,11 @@ cite {
     list-style: none;
     /* border: 5px solid #c39ea0; */
   }
-  
 }
 
 /* #MEDIA FOR IPADS & Surface */
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
   /* #Image needs to go to the right */
-  .images img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translateX(-50%);
-    transition: bottom 4s left 4s;
-    margin-left: 1000%;
-    width: 80%;
-  }
 
   .images {
     /* max-width: 45%; */
@@ -511,21 +500,80 @@ cite {
     height: 50%;
     position: absolute;
     bottom: -300px;
-    right: 100px;
+    right: 400px;
     /* margin-bottom: 10%; */
     /* margin-left: 10%; */
     /* margin-right: 10%; */
     /* border: 5px solid red; */
+    display: none;
   }
 
   .shape {
     margin-right: 50%;
+    display: none;
   }
   .me {
     height: 1000%;
+    display: none;
   }
 
   .images {
     height: 1000%;
+    display: none;
+  }
+
+  .images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    transition: bottom 4s left 4s;
+    z-index: 1;
+    display: none;
+  }
+}
+
+/* #MEDIA FOR IPADS & Surface */
+@media only screen and (min-width: 601px) and
+  /* #Image needs to go to the right */
+
+  .images {
+    /* max-width: 45%; */
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: -300px;
+    right: 400px;
+    /* margin-bottom: 10%; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* border: 5px solid red; */
+    display: none;
+  }
+
+  .shape {
+    margin-right: 50%;
+    display: none;
+  }
+  .me {
+    height: 1000%;
+    display: none;
+  }
+
+  .images {
+    height: 1000%;
+    display: none;
+  }
+
+  .images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    transition: bottom 4s left 4s;
+    z-index: 1;
+    display: none;
   }
 }
