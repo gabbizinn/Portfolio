@@ -183,26 +183,33 @@ p {
 .images {
   /* max-width: 45%; */
   width: 40%;
-  height: 70%;
+  height: 50%;
   position: absolute;
-  bottom: 0;
+  top: 40px;
   right: 100px;
+  /* margin-bottom: 10%; */
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  border: 5px solid red;
 }
 
 .images img {
   height: 100%;
   position: absolute;
   left: 50%;
-  bottom: 0%;
+  bottom: 100%;
   transform: translateX(-50%);
   transition: bottom 4s left 4s;
+  z-index: 1;
 }
 
 .images:hover .shape {
   top: 40px;
+  z-index: 2;
 }
 .images:hover .me {
   left: 55%;
+  z-index: 1px;
 }
 
 /* #the movement/alignment of the icon */
@@ -309,12 +316,42 @@ span {
 
 .boot-skill-logo {
   width: 100%;
+  /* margin-bottom: 10%; */
 }
 
 .css-skill-logo {
   width: 100%;
 }
 
+.django-skill-logo {
+  width: 100%;
+}
+
+.git-skill-logo {
+  width: 100%;
+}
+
+.java-script-skill-logo {
+  width: 100%;
+}
+
+.python-skill-logo {
+  width: 100%;
+}
+
+.spring-skill-logo {
+  width: 100%;
+}
+
+.post-sql-skill-logo {
+  width: 100%;
+}
+
+.sql-skill-logo {
+  width: 50%;
+}
+
+/* #SOME MORE CARD CODE */
 cite {
   font-style: normal;
   font-family: "Amatic SC", cursive;
@@ -340,6 +377,12 @@ cite {
   font-size: 0.7em;
   font-weight: bold;
   color: #373737;
+}
+
+/* #START OF PROJECTS LOGO  */
+.twotter-logo {
+  align-items: center;
+  width: 100%;
 }
 
 /* #picture is removed for phones */
@@ -374,7 +417,7 @@ cite {
   /* #about me para */
   .aboutme-para p {
     width: 50%;
-    line-height: 1.1;
+    line-height: 1.1px;
     display: 100%;
   }
 
@@ -408,5 +451,31 @@ cite {
     background: blue;
     align-items: center;
     text-align: center;
+  }
+}
+
+/* #MEDIA FOR IPADS & Surface */
+@media only screen and (max-width: 720px) {
+  /* #Image needs to go to the right */
+  .images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    transition: bottom 4s left 4s;
+    margin-left: 1000%;
+    width: 80%;
+  }
+
+  .shape {
+    margin-right: 50%;
+  }
+  .me {
+    height: 1000%;
+  }
+
+  .images {
+    height: 1000%;
   }
 }
