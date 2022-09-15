@@ -194,10 +194,10 @@ p {
 /* #the size of my images and how they look */
 .images {
   /* max-width: 45%; */
-  width: 40%;
+  width: 60%;
   height: 50%;
   position: absolute;
-  bottom: 10px;
+  bottom: -300px;
   right: 100px;
   /* margin-bottom: 10%; */
   /* margin-left: 10%; */
@@ -225,6 +225,8 @@ p {
 /* #START OF FOOTER CODE */
 .footer-box {
   box-sizing: border-box;
+  /* border: 5px solid #c39ea0; */
+  /* align-items: center; */
 }
 
 main {
@@ -280,10 +282,12 @@ h1,
 p {
   font-size: 1em;
 }
+
 h1 {
   /* margin: 2em 0 -0.2em; */
   font-family: "Seymour One", sans-serif;
 }
+
 section {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -478,6 +482,19 @@ cite {
     transition: bottom 4s left 4s;
     margin-left: 1000%;
     width: 80%;
+  }
+
+  .images {
+    /* max-width: 45%; */
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: -300px;
+    right: 100px;
+    /* margin-bottom: 10%; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* border: 5px solid red; */
   }
 
   .shape {
