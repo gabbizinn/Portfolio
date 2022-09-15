@@ -34,6 +34,15 @@ body {
   /* background: #fa255e; */
 }
 
+/* #nav bar scroll(skills) */
+#skills {
+  scroll-margin-top: 5em;
+}
+/* #nav bar scroll(projects) */
+#projects {
+  scroll-margin-top: 15em;
+}
+
 /* #moving my nav bar over */
 nav {
   display: flex;
@@ -499,7 +508,7 @@ cite {
 }
 
 /* #MEDIA FOR IPADS & Surface */
-@media only screen and (min-width: 601px) and (max-width: 1023px) {
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
   /* #Image needs to go to the right */
 
   .images {
