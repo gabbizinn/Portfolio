@@ -101,7 +101,7 @@ nav ul li a:hover {
 /* 
 #the color of my last name */
 .last-name {
-  color: #c39ea0;
+  color: #fa255e;
   /* width: 70px; */
   /* height: 70px; */
   /* display: block; */
@@ -242,6 +242,7 @@ p {
   /* border: 5px solid #c39ea0; */
   align-items: center;
   text-align: center;
+  /* margin-left: 1035px; */
 }
 
 main {
@@ -294,9 +295,16 @@ footer {
   width: 95%;
   margin: 0 auto;
 }
+/* #SKILLs INTRO WORDS */
+.skills-h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20%;
+}
 h1,
 p {
   font-size: 1em;
+  /* text-align: center; */
 }
 
 h1 {
@@ -402,7 +410,13 @@ cite {
   color: #373737;
 }
 
-/* #START OF PROJECTS LOGO  */
+/* #START OF PROJECTS CODE  */
+
+.projects-h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20%;
+}
 .twotter-logo {
   align-items: center;
   width: 100%;
@@ -548,6 +562,13 @@ cite {
     transition: bottom 4s left 4s;
     z-index: 1;
     display: none;
+  }
+  .footer-box {
+    box-sizing: border-box;
+    /* border: 5px solid #c39ea0; */
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
   }
 }
 
