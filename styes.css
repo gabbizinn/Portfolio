@@ -238,13 +238,6 @@ p {
 }
 
 /* #START OF FOOTER CODE */
-.footer-box {
-  box-sizing: border-box;
-  /* border: 5px solid #c39ea0; */
-  align-items: center;
-  text-align: center;
-  /* margin-left: 1035px; */
-}
 
 main {
   display: -webkit-flex;
@@ -271,23 +264,22 @@ footer {
   padding: 50px;
   color: black;
   background-color: rgb(248, 229, 229);
-  /* margin-left: 1000px; */
+  /* margin-left: 350px; */
 }
 
-/* #MEDIA FOR creen */
-@media screen and (min-width: 600px) {
-  .footer-box {
-    flex: 1;
-  }
-}
-
-@media screen (max-width: 600px) {
-  .footer {
-    padding: 15px;
-  }
-
-  main {
-    font-size: 55px;
+/* Socails for phone screens */
+@media screen and (max-width: 900px) {
+  footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: black;
+    background-color: rgb(248, 229, 229);
+    margin-left: 65px;
   }
 }
 
@@ -425,6 +417,20 @@ cite {
 
 .sfd-skill-logo {
   width: 100%;
+}
+
+/* #START OF CONTACT CARD CODE */
+.contacts-h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+  color: black;
+  margin-top: 20%;
+  margin-left: ;
+}
+
+.contacts {
+  scroll-margin-top: 15em;
 }
 
 /* #picture is removed for phones */
@@ -570,6 +576,18 @@ cite {
     align-items: center;
     text-align: center;
     margin-left: 200px;
+  }
+  footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: black;
+    background-color: rgb(248, 229, 229);
+    margin-right: 3500px;
   }
 }
 
