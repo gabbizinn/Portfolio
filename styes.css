@@ -29,7 +29,9 @@ body {
 
 /* #nav bar background */
 .nav-bar {
-  position: relative;
+  /* position: relative; */
+  position: fixed;
+  z-index: 10000;
   width: 100%;
   /* height: 100vh; */
   /* background: #fa255e; */
@@ -84,6 +86,8 @@ nav ul li a:hover {
 /* #where my home page intro words are */
 .intro {
   margin-left: 8%;
+  margin-bottom: 65%;
+  /* margin-top: 40%; */
   /* margin-top: 10%; */
   /* align-items: center; */
   /* text-align: center; */
