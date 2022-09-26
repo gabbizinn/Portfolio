@@ -1,5 +1,4 @@
 /* #START OF HOME PAGE CODE */
-
 body,
 html {
   width: 100%;
@@ -21,23 +20,22 @@ body {
   background: rgb(248, 229, 229);
 }
 
-/* #TOP BAR CSS CODE (home) */
 /* # how big my top logo design is */
 .logo {
   width: 20%;
 }
 
-/* #nav bar background */
+/* #nav bar background color */
 .nav-bar {
   /* position: relative; */
-  position: fixed;
-  z-index: 10000;
+  /* position: fixed;
+  z-index: 10000; */
   width: 100%;
   /* height: 100vh; */
   /* background: #fa255e; */
 }
 
-/* #nav bar scroll(skills) */
+/* #nav bar scroll(skills & projects) */
 #skills {
   scroll-margin-top: 5em;
 }
@@ -46,7 +44,7 @@ body {
   scroll-margin-top: 15em;
 }
 
-/* #moving my nav bar over */
+/* #NAV BAR CODE */
 nav {
   display: flex;
   width: 84%;
@@ -56,6 +54,7 @@ nav {
   justify-content: space-between;
 }
 
+/* #the border of my nav bar */
 nav ul {
   display: inline-block;
   list-style: none;
@@ -83,7 +82,8 @@ nav ul li a:hover {
   border-bottom: solid 5px #fa255e;
 }
 
-/* #where my home page intro words are */
+/* #START OF MY INFRO WORDS CODE */
+/* #where my home page intro words are(my name) */
 .intro {
   margin-left: 8%;
   margin-bottom: 5%;
@@ -91,24 +91,9 @@ nav ul li a:hover {
 
 /* #the color and size of my intro words */
 .intro h1 {
-  font-size: 50px;
   color: black;
   margin-bottom: 20px;
-  font-size: 5rem;
-  font-weight: 700;
-}
-
-/* #FIX THIS */
-/* 
-#the color of my last name */
-.last-name {
-  color: #fa255e;
-  /* width: 70px; */
-  /* height: 70px; */
-  /* display: block; */
-  /* background: rgb(248, 229, 229); */
-  /* border-radius: 50%; */
-  margin-left: 23%;
+  font-size: 2rem;
 }
 
 /* #the color of my body words in my intro */
@@ -116,16 +101,7 @@ nav ul li a:hover {
   color: black;
   line-height: 22px;
   font-size: 2rem;
-}
-
-.about-img {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-/* #the size of the body words on skills and projects page */
-p {
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 /* #MY INTRO PARAGRAPH */
@@ -134,52 +110,7 @@ p {
   line-height: 1.1;
 }
 
-/* #the styling of a button for my resume */
-.intro a {
-  /* background: white; */
-  padding: 9px 22px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  display: inline-block;
-  margin: 30px 0px;
-  border-radius: 30px;
-  border: 2px solid;
-  padding: 9px 22px;
-  border: 5px solid #c39ea0;
-}
-
-.intro a:hover {
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: underline;
-  border-bottom: solid 5px #fa255e;
-}
-
-/* #CONTACT LINKS */
-.linkin-pic {
-  /* margin-left: 200px; */
-  /* margin-top: -50%; */
-  height: 10em;
-  float: right;
-  margin-top: 210px;
-}
-
-.github-pic {
-  /* margin-left: 200px; */
-  /* margin-bottom: -40px; */
-  height: 10em;
-  float: right;
-  margin-top: 110px;
-}
-
-.email-pic {
-  height: 10em;
-  float: right;
-  margin-top: 100px;
-}
-
-/* #The images on my home page */
+/* #START OF HOME PAGE IMAGE CODE  */
 /* #the size of my images and how they look */
 .images {
   /* max-width: 45%; */
@@ -238,6 +169,7 @@ p {
   font-size: 50px;
   margin-top: 19%;
 }
+
 h1,
 p {
   font-size: 1em;
@@ -265,11 +197,8 @@ section {
   border: 5px solid #c39ea0;
   border-radius: 30px;
 }
-blockquote {
-  margin: 0;
-}
 
-/* #Spans for Skills */
+/* #spans for Skills */
 span {
   width: 70px;
   height: 70px;
@@ -332,7 +261,6 @@ cite {
 
 h1,
 p,
-blockquote p,
 cite {
   font-family: "Montserrat";
 }
@@ -344,7 +272,7 @@ h1 {
 cite {
   font-size: 0.7em;
   font-weight: bold;
-  color: #373737;
+  color: black;
 }
 
 /* #START OF PROJECTS CODE  */
@@ -362,46 +290,7 @@ cite {
   width: 100%;
 }
 
-/* #START OF CONTACT CARD (Footer)CODE */
-
-.contact-card {
-  background-color: blue;
-  padding: 1.7em;
-  align-items: center;
-  text-align: center;
-  border: 5px solid #c39ea0;
-}
-
-/* #START OF FOOTER (contacts) CODE */
-main {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  line-height: 3.8;
-  font-size: 80px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-footer {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 50px;
-  color: black;
-  background-color: rgb(248, 229, 229);
-
-  /* margin-left: 350px; */
-}
-
+/* #START OF MEDIA FOR PHONE SCREEN CODE */
 /* #picture is removed for phones */
 @media only screen and (max-width: 600px) {
   /* #The images on my home page */
@@ -497,7 +386,7 @@ footer {
   }
 }
 
-/* #MEDIA FOR IPADS & Surface */
+/* #START OF MEDIA FOR IPADS & Surface */
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   /* #Image needs to go to the right */
 
