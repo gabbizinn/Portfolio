@@ -86,11 +86,7 @@ nav ul li a:hover {
 /* #where my home page intro words are */
 .intro {
   margin-left: 8%;
-  margin-bottom: 65%;
-  /* margin-top: 40%; */
-  /* margin-top: 10%; */
-  /* align-items: center; */
-  /* text-align: center; */
+  margin-bottom: 5%;
 }
 
 /* #the color and size of my intro words */
@@ -160,32 +156,6 @@ p {
   border-bottom: solid 5px #fa255e;
 }
 
-/* #START OF CONTACT PAGE CODE */
-/* #home page contact links */
-.home-container {
-  width: 45%;
-  margin: 0 auto;
-  float: center;
-}
-
-.contact-card {
-  background-color: white;
-  padding: 1.3em;
-  margin-left: 20px;
-}
-
-.contacth {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* #contact bar container */
-.home-container {
-  width: 65%;
-  margin: 0 auto;
-  margin-left: 150px;
-}
-
 /* #CONTACT LINKS */
 .linkin-pic {
   /* margin-left: 200px; */
@@ -227,7 +197,7 @@ p {
 .images img {
   height: 100%;
   position: absolute;
-  left: 50%;
+  left: 70%;
   bottom: 100%;
   transform: translateX(-50%);
   transition: bottom 4s left 4s;
@@ -239,36 +209,6 @@ p {
   width: calc(100% - 225px);
   margin-left: 220px;
   transition: all 0.5s ease;
-}
-
-/* #START OF FOOTER CODE */
-
-main {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  line-height: 3.8;
-  font-size: 80px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-footer {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 50px;
-  color: black;
-  background-color: rgb(248, 229, 229);
-  /* margin-left: 350px; */
 }
 
 /* Socails for phone screens */
@@ -408,7 +348,6 @@ cite {
 }
 
 /* #START OF PROJECTS CODE  */
-
 .projects-h1 {
   text-align: center;
   font-size: 50px;
@@ -423,18 +362,44 @@ cite {
   width: 100%;
 }
 
-/* #START OF CONTACT CARD CODE */
-.contacts-h1 {
-  text-align: center;
+/* #START OF CONTACT CARD (Footer)CODE */
+
+.contact-card {
+  background-color: blue;
+  padding: 1.7em;
   align-items: center;
-  font-size: 50px;
-  color: black;
-  margin-top: 20%;
-  margin-left: ;
+  text-align: center;
+  border: 5px solid #c39ea0;
 }
 
-.contacts {
-  scroll-margin-top: 15em;
+/* #START OF FOOTER (contacts) CODE */
+main {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  line-height: 3.8;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: black;
+  background-color: rgb(248, 229, 229);
+
+  /* margin-left: 350px; */
 }
 
 /* #picture is removed for phones */
