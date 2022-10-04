@@ -27,10 +27,10 @@ body {
 
 /* #nav bar background color */
 .nav-bar {
-  /* position: relative; */
-  /* position: fixed;
-  z-index: 10000; */
+  position: none;
+  z-index: 10000;
   width: 100%;
+  margin-left: 40px;
   /* height: 100vh; */
   /* background: #fa255e; */
 }
@@ -91,6 +91,7 @@ nav ul li a:hover {
 
 /* #the color and size of my intro words */
 .intro h1 {
+  text-decoration: none;
   color: black;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -281,6 +282,11 @@ cite {
   font-size: 50px;
   margin-top: 20%;
 }
+/* #Projects links (to view projects)*/
+h5 {
+  text-align: center;
+}
+
 .twotter-logo {
   align-items: center;
   width: 100%;
