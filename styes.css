@@ -84,6 +84,10 @@ nav ul li a:hover {
 
 /* #START OF MY INFRO WORDS CODE */
 /* #where my home page intro words are(my name) */
+.hi {
+  color: #fa255e;
+  font-size: 160%;
+}
 .intro {
   margin-left: 8%;
   margin-bottom: 5%;
