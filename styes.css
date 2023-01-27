@@ -54,8 +54,6 @@ nav {
   scroll-margin-top: 15em;
 }
 
-
-
 /* #The border of my nav bar */
 nav ul {
   display: inline-block;
@@ -65,12 +63,25 @@ nav ul {
 }
 
 /* #Resune button */
-button{
+button {
+  background-color: rgb(248, 229, 229);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  list-style: none;
-  border: 5px solid #c39ea0;
+  margin: 4px 2px;
+  cursor: pointer;
   border-radius: 30px;
-  margin-right: 100px;
+  border: 5px solid #c39ea0;
+  font-weight: bold;
+  
+ 
+}
+
+button :hover{
+  background-color: fa255e;
 }
 
 /* #Nav list format (spacing my words) */
@@ -219,6 +230,12 @@ span {
   width: 100%;
 }
 
+vs-skill-logo{
+  width: 100%;
+  margin-right: 200%;
+  margin-right: 20%;
+}
+
 .java-script-skill-logo {
   width: 100%;
 }
@@ -236,12 +253,29 @@ span {
 }
 
 .sql-skill-logo {
-  width: 50%;
+  width: 100%;
+  /* margin-bottom: 20%; */
 }
 
 .canva-skill-logo{
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 130%;
+  margin-right: 300%;
+}
+
+.adobe-skill-logo{
+  width: 100%;
+  margin-right: 200%;
+  margin-right: 20%;
+}
+
+
+/* #new */
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
 }
 
 /* #SOME MORE CARD CODE */
