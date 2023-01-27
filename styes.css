@@ -15,12 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #background color of page*/
+/* #Background Color */
 body {
   background: rgb(248, 229, 229);
 }
 
-/* # how big my top logo design is */
+/* # How big my top logo design is */
 .logo {
   width: 20%;
 }
@@ -45,14 +45,16 @@ nav {
   /* background: #fa255e; */
 }
 
-/* #Nav bar scroll(skills)*/
+/* #Nav bar scroll(Skills) */
 #skills {
   scroll-margin-top: 5em;
 }
-/* #Nav bar scroll(projects) */
+/* #nav bar scroll(Projects) */
 #projects {
   scroll-margin-top: 15em;
 }
+
+
 
 /* #The border of my nav bar */
 nav ul {
@@ -62,6 +64,7 @@ nav ul {
   border-radius: 30px;
 }
 
+/* #Resune button */
 button{
   display: inline-block;
   list-style: none;
@@ -84,38 +87,37 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* #The color of the line that pops up when I hover over a word */
+/* #the color of the line that pops up when I hover over a word */
 nav ul li a:hover {
   text-decoration: underline;
   border-bottom: solid 5px #fa255e;
 }
 
-
 /* #START OF MY INFRO WORDS CODE */
 /* #where my home page intro words are(my name) */
 .hi {
-  color: #fa255e;
-  font-size: 160%;
-  text-align: center;
-}
-
-/* #Intro paragraph */
-.paragraph {
-  margin-left: 28%;
-  margin-bottom: 5%;
-  text-align: center;
-  width: 50%;
-  line-height: 1.1;
+  /* color: #fa255e; */
   color: black;
+  font-size: 160%;
+}
+/* #MY INTRO PARAGRAPH */
+.intro {
+  margin-left: 8%;
+  margin-bottom: 5%;
   line-height: 22px;
   font-size: 2rem;
   font-size: 20px;
 }
 
+/* #MY INTRO PARAGRAPH spacing */
+.aboutme-para p {
+  width: 50%;
+  line-height: 1.1;
+}
 
-/* #START OF HOME PAGE IMAGE CODE(Took out)  */
+/* #START OF HOME PAGE IMAGE CODE  */
 /* #the size of my images and how they look */
-.me {
+.images {
   /* max-width: 45%; */
   width: 60%;
   height: 50%;
@@ -128,7 +130,7 @@ nav ul li a:hover {
   /* border: 5px solid red; */
 }
 
-.me img {
+.images img {
   height: 100%;
   position: absolute;
   left: 70%;
@@ -152,17 +154,19 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 /* #SKILLs INTRO WORDS */
-
 .skills-h1 {
   text-align: center;
   font-size: 50px;
   margin-top: 19%;
 }
 
-/* #Click to view logo */
-h5{
-  text-align: center;
-  font-size: 15px;
+/* #Spacing of words */
+h1,
+p {
+  font-size: 1em;
+  font-family: "Seymour One", sans-serif;
+  margin-top: 100px;
+  /* text-align: center; */
 }
 
 section {
@@ -235,6 +239,11 @@ span {
   width: 50%;
 }
 
+.canva-skill-logo{
+  width: 100%;
+  margin-bottom: 10%;
+}
+
 /* #SOME MORE CARD CODE */
 cite {
   font-style: normal;
@@ -258,22 +267,18 @@ cite {
   color: black;
 }
 
-
 /* #START OF PROJECTS CODE  */
-/* #Project title */
 .projects-h1 {
   text-align: center;
   font-size: 50px;
-  margin-top: 19%;
+  bottom: 50px;
 }
-
-/* #Click to view logo */
-h5{
+/* #Projects links (to view projects)*/
+h5 {
   text-align: center;
   font-size: 15px;
 }
 
-/* #Project cards */
 .pcard {
   background-color: white;
   padding: 1.7em;
@@ -283,23 +288,18 @@ h5{
   border-radius: 30px;
 }
 
+.twotter-logo {
+  align-items: center;
+  width: 100%;
+}
 
-/* #MEDIA CODE */
+.sfd-skill-logo {
+  width: 100%;
+}
 
-/* #START OF MEDIA FOR PHONE SCREEN CODE(Iphones) */
-@media only screen and (max-width: 900px) {
-
-  /* #about me para */
-  .aboutme-para p {
-    width: 50%;
-    line-height: 80vh;
-    display: 100%;
-  }
-
-  .paragraph {
-    line-height: 40px;
-  }
-
+/* #START OF MEDIA FOR PHONE SCREEN CODE */
+/* #picture is removed for phones */
+@media only screen and (max-width: 600px) {
   /* #HEADING words(my name) */
   .intro {
     align-items: center;
@@ -316,47 +316,41 @@ h5{
 
   .intro p {
     color: black;
-    line-height: 22pt;
+    line-height: 220pt;
     font-size: 2rem;
     width: 100%;
     margin-left: 2%;
 
   }
 
-  /* #nav bar */
-  .nav-bar {
-    position: relative;
-    width: 100%;
-    height: 10vh;
-    align-items: center;
-    text-align: center;
+
+  /* #The images on my home page */
+  /* #the size of my images and how they look */
+  .images {
+    /* max-width: 45%; */
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    display: none;
   }
 
-  .pcard {
-    background-color: white;
-    padding: 1.7em;
-    align-items: center;
-    text-align: center;
-    border: 5px solid #c39ea0;
+  .images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    transition: bottom 4s left 4s;
+    display: none;
   }
 
-  section {
-    display: block;
-    width: 100%;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
-    margin-top: 2em;
+  .about-img {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: none;
   }
-
-  nav ul {
-    display: inline-block;
-    list-style: none;
-    /* border: 5px solid #c39ea0; */
-  }
-}
-
-/* #START OF MEDIA FOR IPADS & Surface */
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
   /* #about me para */
   .aboutme-para p {
     width: 50%;
@@ -386,9 +380,8 @@ h5{
     color: black;
     line-height: 22pt;
     font-size: 2rem;
+    /* display: 100%; */
     width: 100%;
-    margin-left: 2%;
-
   }
 
   /* #nav bar */
@@ -396,11 +389,12 @@ h5{
     position: relative;
     width: 100%;
     height: 10vh;
+    /* background: blue; */
     align-items: center;
     text-align: center;
   }
 
-  .pcard {
+  .card {
     background-color: white;
     padding: 1.7em;
     align-items: center;
@@ -421,7 +415,57 @@ h5{
     list-style: none;
     /* border: 5px solid #c39ea0; */
   }
+}
 
+/* #START OF MEDIA FOR IPADS & Surface */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  /* #Image needs to go to the right */
+
+  .images {
+    /* max-width: 45%; */
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: -300px;
+    right: 400px;
+    /* margin-bottom: 10%; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* border: 5px solid red; */
+    display: none;
+  }
+
+  .shape {
+    margin-right: 50%;
+    display: none;
+  }
+  .me {
+    height: 1000%;
+    display: none;
+  }
+
+  .images {
+    height: 1000%;
+    display: none;
+  }
+
+  .images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    transition: bottom 4s left 4s;
+    z-index: 1;
+    display: none;
+  }
+  .footer-box {
+    box-sizing: border-box;
+    /* border: 5px solid #c39ea0; */
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+  }
   footer {
     display: -webkit-flex;
     display: -moz-flex;
@@ -436,3 +480,46 @@ h5{
   }
 }
 
+/* #MEDIA FOR IPADS & Surface */
+@media only screen and (min-width: 601px) and {
+  /* #Image needs to go to the right */
+
+  .images {
+    /* max-width: 45%; */
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: -300px;
+    right: 400px;
+    /* margin-bottom: 10%; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* border: 5px solid red; */
+    display: none;
+  }
+
+  .shape {
+    margin-right: 50%;
+    display: none;
+  }
+  .me {
+    height: 1000%;
+    display: none;
+  }
+
+  .images {
+    height: 1000%;
+    display: none;
+  }
+
+  .images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    transition: bottom 4s left 4s;
+    z-index: 1;
+    display: none;
+  }
+}
