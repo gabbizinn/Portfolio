@@ -1,4 +1,6 @@
-# This is my personal portfolio, showcasing an extensive array of skills encompassing various domains, including information technology and graphic design. Within the contents of this portfolio, you will find a comprehensive demonstration of my proficiency and expertise in these fields.
+# Description Below
+
+This is my personal portfolio, showcasing an extensive array of skills encompassing various domains, including information technology and graphic design. Within the contents of this portfolio, you will find a comprehensive demonstration of my proficiency and expertise in these fields.
 
 Additionally, my graphic design skills are prominently displayed within this portfolio, with a diverse selection of projects that exhibit my creative prowess and attention to detail. Whether it's crafting visually captivating marketing materials, designing engaging user interfaces, or conceptualizing aesthetically pleasing branding elements, I have consistently demonstrated my ability to merge artistic flair with strategic thinking to produce impactful visual content.
 
