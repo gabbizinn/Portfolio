@@ -59,6 +59,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 
 }
+.pic.png{
+  size: 100px;
+}
 
 body {
   margin: 0;
@@ -538,6 +541,7 @@ mark,
   border: 5px solid rgb(248, 229, 229);
   border-radius: 0.25rem;
   max-width: 100%;
+  left: 500%;
   height: auto;
 }
 
