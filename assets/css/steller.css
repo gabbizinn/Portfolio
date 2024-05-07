@@ -584,8 +584,8 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   /* background-color:white; */
-  border: 5px solid rgb(248, 229, 229);
-  border-radius: 0.25rem;
+  /* border: 5px solid rgb(248, 229, 229); */
+  /* border-radius: 0.25rem; */
   max-width: 100%;
   left: 500%;
   height: auto;
